@@ -24,7 +24,7 @@ func EmailAPI(c *gin.Context) {
 	if err := c.BindJSON(&emailRequest); err != nil {
 		return
 	}
-	p.To = emailRequest.To
+	p.To = os.Getenv("EMAIL_TO")
 	p.From = os.Getenv("EMAIL_FROM")
 	p.Subject = emailRequest.Subject
 	p.Body = emailRequest.Body
