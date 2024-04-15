@@ -16,7 +16,7 @@ func init() {
 
 func main() {
 	mappings.CreateUrlMappings()
-	err := mappings.Router.Run(":8080")
+	err := mappings.Router.Run(":80")
 	if err != nil {
 		log.Fatal(err)
 	}
