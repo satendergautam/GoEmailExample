@@ -18,6 +18,7 @@ func CreateUrlMappings() {
 		allowedOrigins := []string{
 			"https://email.marketing-leaders.de",
 			"http://marketing-leaders.de/",
+			"http://localhost/",
 		}
 
 		origin := c.GetHeader("Origin")
