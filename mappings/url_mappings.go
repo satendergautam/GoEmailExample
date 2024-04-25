@@ -17,7 +17,7 @@ func CreateUrlMappings() {
 		// List of allowed origins
 		allowedOrigins := []string{
 			"https://email.marketing-leaders.de",
-			"http://marketing-leaders.de/",
+			"https://marketing-leaders.de",
 			"http://localhost/",
 		}
 
